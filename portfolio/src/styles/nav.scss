@@ -1,0 +1,44 @@
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+nav ul a {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+nav ul {
+    margin: 15px 0;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: auto auto;
+    font-size: 1.2em;
+}
+
+nav ul .navLinks {
+    margin-left: auto;
+}
+
+nav ul .navLink {
+    border-radius: 5px;
+    padding: 7.5px 15px;
+    margin: 0 5px;
+}
+
+nav ul .navLink:hover {
+    background-color: rgb(20, 20, 20);
+}
+
+
+// media queries
+
+@media screen and (max-width: 768px){
+    nav .navLinks {
+        display: none;
+    }
+}

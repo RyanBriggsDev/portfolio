@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+ul, li, a {
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+// colors 
+$btnBlue: rgb(0, 108, 202);
+
+// reusable classes
+
+.container {
+    width: 100%;
+    max-width: 1250px;
+    padding: 0 30px;
+}
+
+.btn {
+    background: $btnBlue;
+    border-radius: 5px;
+    padding: 7.5px 15px;
+}
+
+.btn:hover {
+    background: rgba(0, 42, 150, 0.5);
+    cursor: pointer;
+}
