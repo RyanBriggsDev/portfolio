@@ -40,3 +40,24 @@ $btnBlue: rgb(0, 108, 202);
     background: rgba(0, 42, 150, 0.5);
     cursor: pointer;
 }
+
+.hide {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+.il-block {
+    display: inline-block;
+}
+
+// mixins 
+
+@mixin flexCenterColumn {
+    display: flex;
+    justify-content: center;
+    align-self: center;  
+    flex-direction: column;
+}

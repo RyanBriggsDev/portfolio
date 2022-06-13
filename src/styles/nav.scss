@@ -1,3 +1,11 @@
+// mixins 
+@mixin flexCenterColumn {
+    display: flex;
+    justify-content: center;
+    align-self: center;  
+    flex-direction: column;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -20,8 +28,13 @@ nav ul {
     font-size: 1.2em;
 }
 
-nav ul .navLinks {
+nav ul .navLeft {
+    margin-right: auto;
+}
+
+nav ul .navRight {
     margin-left: auto;
+    @include flexCenterColumn;
 }
 
 nav ul .navLink {
@@ -34,11 +47,30 @@ nav ul .navLink:hover {
     background-color: rgb(20, 20, 20);
 }
 
+// hamburger
+
+nav .hamburgerBtn {
+    @include flexCenterColumn;
+}
+
+nav .burgLine {
+    padding: 0;
+    margin: 3px;
+    height: 2px;
+    width: 15px;
+    background: white;
+}
 
 // media queries
 
 @media screen and (max-width: 768px){
-    nav .navLinks {
+    nav .navLrgDisplayLinks {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    nav .hamburgerBtn {
         display: none;
     }
 }
