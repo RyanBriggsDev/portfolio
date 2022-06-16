@@ -12,7 +12,7 @@ nav {
     width: 100%;
     display: grid;
     justify-items: center;
-    align-items: center;
+    align-items: center;  
 }
 
 nav ul a {
@@ -51,6 +51,8 @@ nav ul .navLink:hover {
 
 nav .hamburgerBtn {
     @include flexCenterColumn;
+    padding: 5px;
+    cursor: pointer;
 }
 
 nav .burgLine {
