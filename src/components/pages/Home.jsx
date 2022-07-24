@@ -1,8 +1,11 @@
-import React from 'react'
+import Header from '../layout/Header'
 
-function Home() {
+function Home(props) {
   return (
-    <div></div>
+    <Header headerText={`👋 Hi. I'm Ryan`} 
+            headerDesc="I'm a Self Taught Front End Web Developer 👨‍💻"
+            btnText='View My Projects'
+    />
   )
 }
 

@@ -1,8 +1,13 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
-function Header(title) {
+function Header(props) {
   return (
-    <h1 value={title}></h1>
+    <header>
+      <h1>{props.headerText}</h1>
+      <p>{props.headerDesc}</p>
+      <Link to="/projects"><button className='btn btn-primary'>{props.btnText}</button></Link>
+    </header>
   )
 }
 

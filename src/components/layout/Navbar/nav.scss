@@ -1,5 +1,5 @@
 nav {
-    background: rgb(18, 79, 126);
+    background-color: black;
     color: white;
     display: flex;
     align-items: center;
@@ -37,9 +37,24 @@ nav .nav-right {
 
 nav .nav-right .nav-link {
     display: inline-block;
-    margin: 0 10px;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
+    padding: 7.5px 15px;
+    border-radius: 5px;
+    margin: 0 5px;
 }
+
+nav .nav-right .nav-link:hover {
+    background-color: rgb(47, 47, 47);
+}
+
+nav .nav-right .nav-link:last-child {
+    background-color: #124f7e
+}
+
+nav .nav-right .nav-link:last-child:hover {
+    background-color: rgb(47, 47, 47);
+}
+
 
 // hamburger menu
 
@@ -54,7 +69,7 @@ nav .nav-right .hamburger-line {
     width: 1.5rem;
     height: 2px;
     margin: 5px 0;
-    transition: all .5s ease-in-out;
+    transition: all .2s ease-in-out;
 }
 
 @media screen and (max-width: 550px) {
@@ -68,14 +83,9 @@ nav .nav-right .hamburger-line {
         width: 100%;
         height: 100%;
         text-align: center;
-        padding: 5px 0;
     }
-    nav .nav-right .nav-link:hover {
-        background-color: rgba(0, 0, 0, 0.4)
-    }
-
     nav .nav-right #show {
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: black;
         display: flex;
         position: absolute;
         left: 0px;
@@ -84,6 +94,9 @@ nav .nav-right .hamburger-line {
         width: 100%;
         flex-direction: column;
         align-items: center;
+    }
+    nav .nav-right .nav-link {
+        border-radius: 0;
     }
 }
 
