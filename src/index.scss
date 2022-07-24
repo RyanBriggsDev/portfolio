@@ -2,8 +2,10 @@
     box-sizing: border-box;
 }
 
+
 body {
-    background: rgba(128, 128, 128, 0.245);
+    background: black;
+    color: white;
     font-size: 16px;
     margin: 0;
     padding: 0;
@@ -20,4 +22,62 @@ h1, h2, h3, h4, h5, h6, p, ul, li, a {
 li, a {
     text-decoration: none;
     list-style-type: none;
+}
+
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+
+// page layout
+
+
+.page-layout {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.main-container {
+    margin: auto 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 1250px;
+    margin: 0 30px;
+}
+
+// reusable
+
+.btn {
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+}
+
+.btn-primary {
+    background: rgb(18, 79, 126);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: rgb(13, 58, 92)
+}
+
+// header
+
+header > * {
+    margin: 10px 0;
 }
