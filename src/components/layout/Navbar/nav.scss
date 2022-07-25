@@ -6,6 +6,7 @@ nav {
     justify-content: center;
     width: 100%;
     height: 3rem;
+    padding: 0 30px;
 }
 
 nav .nav-container {
@@ -72,7 +73,7 @@ nav .nav-right .hamburger-line {
     transition: all .2s ease-in-out;
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 650px) {
     nav .nav-right .hamburger-link {
         display: block;
     }

@@ -6,7 +6,7 @@ function Footer() {
 
   return (
     <footer>
-        <div className="container">
+        <div>
             <p><a href="https://ryanbriggs.dev">ryanbriggs.dev</a></p>
             <p>© <a href="https://github.com/ryanbriggsdev">Ryan Briggs</a> {year}</p>
         </div>

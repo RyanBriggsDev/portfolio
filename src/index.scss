@@ -39,16 +39,19 @@ a, a:hover, a:focus, a:active {
     min-height: 100vh;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .main-container {
     margin: auto 0;
-    width: 100%;
+    max-width: 1250px;
 }
 
 .container {
+    width: 100%;
     max-width: 1250px;
     margin: 0 30px;
+    padding: 0 30px;
 }
 
 // reusable
@@ -80,4 +83,32 @@ a, a:hover, a:focus, a:active {
 
 header > * {
     margin: 10px 0;
+}
+
+// projects
+
+.projects-container {
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    flex: 1;
+    gap: 15px;
+}
+
+.projects-container .project-card {
+    background-color: white;
+    color: black;
+    padding: 15px;
+    width: 33%;
+}
+
+.project-card > img {
+    width: 100%;
+}
+
+.project-card .btn-container {
+    width: 100%;
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
 }
