@@ -131,13 +131,55 @@ header > * {
     gap: 15px;
 }
 
-.card-content > * {
-    // margin: 15px 0;
-}
-
 .project-card .btn-container {
     width: 100%;
     display: flex;
     flex: 1;
     justify-content: space-evenly;
+}
+
+// media queries
+
+@media (max-width: 1000px){
+    .projects-container {
+        width: 100%;
+        margin: 30px 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 30px;
+    }    
+}
+
+@media (max-width: 700px) {
+    .projects-container {
+        margin: 15px 0;
+        gap: 15px;
+    }
+    .card-content {
+        gap: 5px;
+        padding: 0;
+    }
+    .project-card {
+        padding: 5px;
+    }
+    .project-card .btn-container {
+        width: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 5px;
+    }
+    .btn-container a, .link-btn {
+        width: 100%;
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 550px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+    .container {
+        padding: 30px 15px;
+    }
 }
