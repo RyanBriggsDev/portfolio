@@ -1,12 +1,11 @@
 import { useEffect } from "react"
+import Loading from "./layout/Loading"
 
 function TwitterRedirect() {
     useEffect(() => {
         window.location.replace('https://twitter.com/ryanbriggsdev')
       }, [])
-  return (
-    <div>Loading...</div>
-  )
+  return <Loading />
 }
 
 export default TwitterRedirect

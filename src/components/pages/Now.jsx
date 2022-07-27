@@ -2,7 +2,7 @@ import React from 'react'
 
 function Now() {
   return (
-    <div>Now</div>
+    <div>Now - Finish this page 😉</div>
   )
 }
 

@@ -1,4 +1,5 @@
 import {useEffect} from 'react'
+import Loading from './layout/Loading'
 
 function GithubRedirect() {
 
@@ -6,9 +7,7 @@ function GithubRedirect() {
     window.location.replace('https://github.com/RyanBriggsDev')
   }, [])
 
-  return (
-    <div>Loading...</div>
-  )
+  return <Loading />
 }
 
 export default GithubRedirect

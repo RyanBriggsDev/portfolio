@@ -1,5 +1,6 @@
 import LayoutContext from '../context/LayoutContext'
 import { useContext, useEffect } from 'react'
+import Loading from '../layout/Loading'
 
 function ProjectCards() {
 
@@ -30,7 +31,7 @@ function ProjectCards() {
             </>
         )
     } else {
-        return 'loading...'
+        return <Loading />
     }
 }
 
