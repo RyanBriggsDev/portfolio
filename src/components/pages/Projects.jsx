@@ -6,7 +6,9 @@ function Projects(props) {
      <Header headerText={`Projects`} 
                 headerDesc="Here are my most recent projects, pulled from GitHub using the GitHub API 👨‍💻"
                 btnText='GitHub'  
-      />    
+                to='/github-redirect'
+                target="_blank"
+      />
       <ProjectCards />
     </>
     )

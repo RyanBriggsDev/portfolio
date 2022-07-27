@@ -33,7 +33,6 @@ a, a:hover, a:focus, a:active {
 
 // page layout
 
-
 .page-layout {
     display: flex;
     min-height: 100vh;
@@ -54,6 +53,14 @@ a, a:hover, a:focus, a:active {
     padding: 120px 30px;
 }
 
+// home
+
+.home-content-grid {
+    display: grid;
+    grid-template-rows: auto;
+    gap:  60px
+}
+
 // reusable
 
 .btn {
@@ -71,12 +78,13 @@ a, a:hover, a:focus, a:active {
 }
 
 .btn-primary {
-    background: rgb(18, 79, 126);
+    background: rgb(13,55,87);
+    background: linear-gradient(90deg, rgba(13,55,87,1) 0%, rgba(0,161,194,1) 100%);
     color: white;
 }
 
 .btn-primary:hover {
-    background-color: rgb(13, 58, 92)
+    background-color: rgb(13, 58, 92);
 }
 
 .link-btn {
@@ -93,7 +101,15 @@ a, a:hover, a:focus, a:active {
     background-color: rgb(221, 221, 221);
 }
 
+.disabled {
+    display: none;
+}
+
 // header
+
+header {
+    margin: 120px 0;
+}
 
 header > * {
     margin: 10px 0;
@@ -111,7 +127,8 @@ header > * {
 }
 
 .projects-container .project-card {
-    background-color: rgb(18, 79, 126);
+    background: rgb(13,55,87);
+    background: linear-gradient(90deg, rgba(13,55,87,1) 0%, rgba(0,161,194,1) 100%);
     border-radius: 5px;
     color: white;
     padding: 5px;
@@ -138,6 +155,33 @@ header > * {
     justify-content: space-evenly;
 }
 
+// contact
+
+.contact-card {
+    margin: 60px 0;
+}
+
+.contact-card > ul {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.contact-icon {
+    width: 60px;
+    height: 60px;
+}
+
+// not found
+
+.not-found > * {
+    margin: 15px 0;
+}
+
+.not-found > h1 {
+    font-size: 9rem;
+}
+
 // media queries
 
 @media (max-width: 1000px){
@@ -157,7 +201,7 @@ header > * {
         gap: 15px;
     }
     .card-content {
-        gap: 5px;
+        gap: 10px;
         padding: 0;
     }
     .project-card {
@@ -181,5 +225,21 @@ header > * {
     }
     .container {
         padding: 30px 15px;
+    }
+    .contact-card > ul {
+        display: grid;
+        width: 50%;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        margin-top: 30px;
+    }
+    header {
+        margin: 30px 0;
+    }
+    .contact-card {
+        margin: 30px 0;
+    }
+    .not-found > h1 {
+        font-size: 6rem;
     }
 }

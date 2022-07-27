@@ -8,6 +8,8 @@ import Projects from './components/pages/Projects'
 import Navbar from './components/layout/Navbar/Navbar'
 import { LayoutProvider } from './components/context/LayoutContext'
 import Footer from './components/layout/Footer/Footer'
+import GithubRedirect from './components/GithubRedirect'
+import TwitterRedirect from './components/TwitterRedirect'
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
                     <Route path='/contact' element={<Contact />} />
                     <Route path='/now' element={<Now />} />
                     <Route path='/projects' element={<Projects />} />
+                    <Route path='/github-redirect' element={<GithubRedirect />} />
+                    <Route path='/twitter-redirect' element={<TwitterRedirect />} />
                 </Routes>
                 </div>
             </LayoutProvider>
