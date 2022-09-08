@@ -2,6 +2,19 @@
     box-sizing: border-box;
 }
 
+// fonts
+
+@font-face {
+    font-family: 'poppins-bold';
+    src: url(./assets/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'poppins-light';
+    src: url(./assets/Poppins/Poppins-Light.ttf);
+}
+
+// defaults
 
 body {
     background: black;
@@ -30,7 +43,6 @@ a, a:hover, a:focus, a:active {
     cursor: pointer;
 }
 
-
 // page layout
 
 .page-layout {
@@ -58,7 +70,67 @@ a, a:hover, a:focus, a:active {
 .home-content-grid {
     display: grid;
     grid-template-rows: auto;
-    gap:  60px
+    gap: 60px
+}
+
+.home-header {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
+.home-header-img {
+    width: 100%;
+    animation: bounce .8s ease-in-out;
+    animation: bounceHover;
+}
+
+.h1-home-header {
+    font-size: 4rem;
+}
+
+.h1-span-home-header, .p-home-header, .label-home-header {
+    font-family: poppins-bold;
+    background: #121FCF;
+    background: linear-gradient(to right, rgb(17, 85, 136) 0%, rgba(0,161,194,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes bounce {
+    0% {transform: translateY(0)}
+    50% {transform: translateY(-30px)}
+    100% {transform: translateY(0)}
+}
+
+@keyframes bounceHover {
+    0% {transform: translateY(0)}
+    50% {transform: translateY(-30px)}
+    100% {transform: translateY(0)}
+}
+
+.hover-animation.label-home-header {
+    animation: bounce .8s ease-in-out;
+}
+.hover-animation.h1-home-header {
+    animation: bounce 1.2s ease-in-out;
+}
+.hover-animation.p-home-header {
+    animation: bounce 1.6s ease-in-out;
+}
+
+.hover-animation:hover {
+    animation: bounceHover .8s ease;
+}
+
+.label-home-header {
+    font-family: poppins-light;
+    font-size: 2rem;
+}
+
+.p-home-header {
+    font-family: poppins-light;
+    font-size: 3rem;
 }
 
 // reusable

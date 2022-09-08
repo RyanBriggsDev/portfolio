@@ -1,6 +1,7 @@
 import LayoutContext from "../../context/LayoutContext"
 import { useContext, useState } from "react"
 import './nav.scss'
+import { Link } from "react-router-dom"
 
 function NavBar() {
 
@@ -22,8 +23,8 @@ function NavBar() {
                     </div>
                     <ul className="nav-links" id={navToggle ? 'show' : ''}>
                         {/* <li className='nav-link'><a href="/now">Now</a></li> */}
-                        <li className='nav-link'><a href="/contact">Get In Touch</a></li>
-                        <li className='nav-link'><a href="/projects">Projects</a></li>
+                        <Link to={'/contact'} className="nav-link">Get in touch</Link>
+                        <Link to={'/projects'} className="nav-link">Projects</Link>
                     </ul>
                 </div>
             </div>
