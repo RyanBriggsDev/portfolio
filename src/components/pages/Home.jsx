@@ -1,6 +1,7 @@
 import Header from '../layout/Header'
 import ProjectCards from '../layout/ProjectCards'
 import ContactCard from '../layout/ContactCard'
+import AboutMe from '../AboutMe'
 import { Link } from 'react-router-dom'
 import  CircleLogo  from '../../assets/CircleLogo.png'
 

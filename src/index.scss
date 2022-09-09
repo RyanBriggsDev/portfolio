@@ -14,6 +14,12 @@
     src: url(./assets/Poppins/Poppins-Light.ttf);
 }
 
+// prop classes
+
+.none {
+    display: none;
+}
+
 // defaults
 
 body {
@@ -195,13 +201,15 @@ header .header-h1 {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: bounce .8s ease-in-out;
 }
 
 header .header-p {
     font-family: poppins-bold;
     font-size: 2rem;
     margin-bottom: 15px;
-    color: rgb(0, 89, 149)
+    color: rgb(0, 89, 149);
+    animation: bounce 1.2s ease-in-out;
 }
 
 // projects
