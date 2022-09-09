@@ -14,8 +14,8 @@ export const LayoutProvider = ({ children }) => {
         setLoading(true)
         const response = await fetch('https://api.github.com/users/ryanbriggsdev/repos?per_page=6&sort=updated')
         const data = await response.json()
-        console.log(data);
         setRepos(data)
+        console.log(repos);
         setLoading(false)
         setCallComplete(true)
     }
