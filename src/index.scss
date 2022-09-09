@@ -75,13 +75,22 @@ a, a:hover, a:focus, a:active {
 
 .home-header {
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 0.75fr 0.25fr;
+    gap: 30px;
+}
+
+.home-header-img-div {
+    display: grid;
+    align-items: center;
 }
 
 .home-header-img {
     width: 100%;
-    animation: bounce .8s ease-in-out;
-    animation: bounceHover;
+    animation: bounce 1.6s ease-in-out;
+}
+
+.home-header-img:hover {
+    animation: bounceHover .8s ease-in-out
 }
 
 .h1-home-header {
@@ -111,26 +120,21 @@ a, a:hover, a:focus, a:active {
 
 .hover-animation.label-home-header {
     animation: bounce .8s ease-in-out;
+    font-family: poppins-light;
+    font-size: 2rem;
 }
 .hover-animation.h1-home-header {
     animation: bounce 1.2s ease-in-out;
 }
 .hover-animation.p-home-header {
     animation: bounce 1.6s ease-in-out;
+    font-family: poppins-light;
+    font-size: 3rem;
+    margin-bottom: 15px;
 }
 
 .hover-animation:hover {
     animation: bounceHover .8s ease;
-}
-
-.label-home-header {
-    font-family: poppins-light;
-    font-size: 2rem;
-}
-
-.p-home-header {
-    font-family: poppins-light;
-    font-size: 3rem;
 }
 
 // reusable
@@ -180,11 +184,24 @@ a, a:hover, a:focus, a:active {
 // header
 
 header {
-    margin: 120px 0;
+    margin: 60px 0;
 }
 
-header > * {
-    margin: 10px 0;
+header .header-h1 {
+    font-family: poppins-bold;
+    font-size: 4rem;
+    background: #121FCF;
+    background: linear-gradient(to right, rgb(17, 85, 136) 0%, rgba(0,161,194,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header .header-p {
+    font-family: poppins-bold;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: rgb(0, 89, 149)
 }
 
 // projects
@@ -264,7 +281,10 @@ header > * {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         gap: 30px;
-    }    
+    }
+    .home-header {
+        grid-template-columns: 0.6fr 0.4fr;
+    }
 }
 
 @media (max-width: 700px) {
@@ -288,6 +308,12 @@ header > * {
     .btn-container a, .link-btn {
         width: 100%;
         min-width: 200px;
+    }
+    .h1-home-header {
+        font-size: 3rem;
+    }
+    .hover-animation.p-home-header  {
+        font-size: 2rem;
     }
 }
 
@@ -313,5 +339,12 @@ header > * {
     }
     .not-found > h1 {
         font-size: 6rem;
+    }
+    .home-header {
+        grid-template-columns: 1fr;
+    }
+
+    .home-header-img-div {
+        display: none;
     }
 }
