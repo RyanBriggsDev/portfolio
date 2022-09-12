@@ -17,8 +17,8 @@ function AboutMe() {
       <div className="desc-option-div">
         <div className='btn-circle' onClick={() => setAboutMeText(data.descriptions.short)}></div>
         <div className='btn-circle' onClick={() => setAboutMeText(data.descriptions.fairlyShort)}></div>
-        <div className='btn-circle' onClick={() => setAboutMeText(data.descriptions.long)}></div>
-        <div className='btn-circle' onClick={() => setAboutMeText(data.descriptions.longAf)}></div>
+        {/* <div className='btn-circle' onClick={() => setAboutMeText(data.descriptions.long)}></div> */}
+        {/* <div className='btn-circle' onClick={() => setAboutMeText(data.descriptions.longAf)}></div> */}
       </div>
       <p>{aboutMeText ? aboutMeText : `Hi! I'm Ryan. I'm currently living in the North West UK. I use React JS to make beautiful frontend applications.`}</p>
     </div>
