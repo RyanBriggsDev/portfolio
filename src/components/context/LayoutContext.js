@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useState, useEffect } from "react";
 
 const LayoutContext = createContext()
 
@@ -15,10 +15,13 @@ export const LayoutProvider = ({ children }) => {
         const response = await fetch('https://api.github.com/users/ryanbriggsdev/repos?per_page=6&sort=updated')
         const data = await response.json()
         setRepos(data)
-        console.log(repos);
         setLoading(false)
         setCallComplete(true)
     }
+
+    useEffect(() => {
+        console.log(repos)
+    }, [repos])
 
     return <LayoutContext.Provider value={{
         fetchRepos,

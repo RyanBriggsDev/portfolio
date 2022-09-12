@@ -19,6 +19,7 @@ function Home(props) {
           <img className='home-header-img' src={CircleLogo} alt="ryan briggs" />
         </div>
       </header>
+      <AboutMe />
       <ProjectCards />
       <ContactCard />
     </div>

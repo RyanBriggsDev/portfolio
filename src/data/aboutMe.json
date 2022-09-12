@@ -1,0 +1,8 @@
+{
+    "descriptions": {
+        "short": "I'm Ryan. I make websites 👨‍💻.",
+        "fairlyShort": "Hi! I'm Ryan. I'm currently living in the North West UK. I use React JS to make beautiful frontend applications.",
+        "long": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec ipsum vitae ante interdum consequat in vitae arcu. Phasellus volutpat nulla vitae nibh congue faucibus. Proin sed quam quis nisl auctor dapibus.",
+        "longAf": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec ipsum vitae ante interdum consequat in vitae arcu. Phasellus volutpat nulla vitae nibh congue faucibus. Proin sed quam quis nisl auctor dapibus. Aliquam quis magna augue. Duis vitae turpis purus. Aliquam interdum et odio in ultrices. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce eleifend sapien tellus, ac faucibus urna dignissim eu. Sed in augue turpis. In ac rhoncus ante, convallis viverra nisl. In euismod dui pretium malesuada laoreet. Quisque semper sapien sed sollicitudin gravida. Cras ut posuere justo, nec venenatis odio. Praesent placerat bibendum libero, facilisis aliquet velit egestas vitae."
+    }
+}
