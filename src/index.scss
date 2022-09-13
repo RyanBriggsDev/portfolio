@@ -267,12 +267,17 @@ header .header-p {
 .project-card-links {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 15px;
 }
 
 .project-card-links > a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.project-card-links > a > button {
+    width: 100%;
 }
 
 .card-content {
@@ -353,6 +358,9 @@ header .header-p {
         display: grid;
         grid-template-rows: 1fr 1fr;
         gap: 5px;
+    }
+    .project-card-links {
+        grid-template-columns: 1fr;
     }
     .btn-container a, .link-btn {
         width: 100%;
