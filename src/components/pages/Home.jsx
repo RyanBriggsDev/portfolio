@@ -1,4 +1,3 @@
-import Header from '../layout/Header'
 import ProjectCards from '../layout/ProjectCards'
 import ContactCard from '../layout/ContactCard'
 import AboutMe from '../AboutMe'

@@ -22,7 +22,7 @@ function NavBar() {
                         <div className="hamburger-line"></div>
                     </div>
                     <ul className="nav-links" id={navToggle ? 'show' : ''}>
-                        {/* <li className='nav-link'><a href="/now">Now</a></li> */}
+                        <li className='nav-link'><a href="/now">Now</a></li>
                         <Link to={'/contact'} className="nav-link">Get in touch</Link>
                         <Link to={'/projects'} className="nav-link">Projects</Link>
                     </ul>

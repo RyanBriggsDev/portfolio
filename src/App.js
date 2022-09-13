@@ -5,6 +5,7 @@ import Contact from './components/pages/Contact'
 import NotFound from './components/pages/NotFound'
 import Now from './components/pages/Now'
 import Projects from './components/pages/Projects'
+import Version from './components/pages/Version'
 import Navbar from './components/layout/Navbar/Navbar'
 import { LayoutProvider } from './components/context/LayoutContext'
 import Footer from './components/layout/Footer/Footer'
@@ -26,6 +27,7 @@ function App() {
                     <Route path='/contact' element={<Contact />} />
                     <Route path='/now' element={<Now />} />
                     <Route path='/projects' element={<Projects />} />
+                    <Route path='/version' element={<Version />} />
                     <Route path='/github-redirect' element={<GithubRedirect />} />
                     <Route path='/twitter-redirect' element={<TwitterRedirect />} />
                 </Routes>

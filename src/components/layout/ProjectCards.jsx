@@ -9,7 +9,7 @@ function ProjectCards() {
     // fetch data on load
     useEffect(() => {
         fetchRepos()
-    }, [])
+    }, [fetchRepos])
 
     if(callComplete === true) {
         return (
