@@ -7,7 +7,7 @@ import  CircleLogo  from '../../assets/CircleLogo.png'
 
 function Home(props) {
   return (
-    <div className='home-content-grid'>
+    <div className='content-grid'>
       <header className='home-header'>
         <div className="home-header-text">
           <p className='hover-animation label-home-header'>Hello there,</p>

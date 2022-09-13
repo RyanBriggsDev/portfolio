@@ -8,7 +8,7 @@ function ContactCard() {
   
   return (
     <div className='contact-card'>
-        <h3>Let's Connect</h3>
+        <h2>Let's Connect</h2>
         <ul>
           <a href="https://twitter.com/ryanbriggsdev" target="_blank">
               <img className="contact-icon" src={twitter} alt="twitter logo" />

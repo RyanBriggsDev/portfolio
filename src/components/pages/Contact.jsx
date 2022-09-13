@@ -6,7 +6,7 @@ import { useState } from 'react'
 function Contact() {
 
   return (
-    <div>
+    <div className='content-grid'>
           <Header headerText={`Get in Touch`} 
                 headerDesc="Contact me on any of the below. If you want a faster reply, use Twitter."
                 btnText='Twitter'

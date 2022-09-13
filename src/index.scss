@@ -73,10 +73,10 @@ a, a:hover, a:focus, a:active {
 
 // home
 
-.home-content-grid {
+.content-grid {
     display: grid;
     grid-template-rows: auto;
-    gap: 60px
+    gap: 90px;
 }
 
 .home-header {
@@ -211,10 +211,6 @@ a, a:hover, a:focus, a:active {
 
 // header
 
-header {
-    margin: 60px 0;
-}
-
 header .header-h1 {
     font-family: poppins-bold;
     font-size: 4rem;
@@ -242,7 +238,7 @@ header .header-p {
 
 // projects
 
-.projects-container {
+.projects-grid {
     width: 100%;
     margin: 30px 0;
     display: grid;
@@ -251,7 +247,7 @@ header .header-p {
     gap: 30px;
 }
 
-.projects-container .project-card {
+.projects-grid .project-card {
     background: rgb(13,55,87);
     background: linear-gradient(90deg, rgba(13,55,87,1) 0%, rgba(0,161,194,1) 100%);
     border-radius: 5px;
@@ -300,10 +296,6 @@ header .header-p {
 
 // contact
 
-.contact-card {
-    margin: 60px 0;
-}
-
 .contact-card > ul {
     display: flex;
     gap: 30px;
@@ -328,7 +320,7 @@ header .header-p {
 // media queries
 
 @media (max-width: 1000px){
-    .projects-container {
+    .projects-grid {
         width: 100%;
         margin: 30px 0;
         display: grid;
@@ -342,7 +334,7 @@ header .header-p {
 }
 
 @media (max-width: 700px) {
-    .projects-container {
+    .projects-grid {
         margin: 15px 0;
         gap: 15px;
     }
@@ -372,10 +364,13 @@ header .header-p {
     .hover-animation.p-home-header  {
         font-size: 2rem;
     }
+    .content-grid {
+        gap: 60px;
+    }
 }
 
 @media (max-width: 550px) {
-    .projects-container {
+    .projects-grid {
         grid-template-columns: 1fr;
     }
     .container {
@@ -388,15 +383,11 @@ header .header-p {
         gap: 30px;
         margin-top: 30px;
     }
-    header {
-        margin: 30px 0;
-    }
-    .contact-card {
-        margin: 30px 0;
-    }
+
     .not-found > h1 {
         font-size: 6rem;
     }
+    
     .home-header {
         grid-template-columns: 1fr;
     }

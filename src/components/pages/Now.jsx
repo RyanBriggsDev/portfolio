@@ -2,7 +2,9 @@ import React from 'react'
 
 function Now() {
   return (
-    <div>Now - Finish this page 😉</div>
+    <div className="content-grid">
+      <div>Now - Finish this page 😉</div>
+    </div>
   )
 }
 
