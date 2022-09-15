@@ -20,13 +20,14 @@ function ProjectCards() {
                         <div className="project-card" key={repo.id}>
                             <div className="project-card-title">
                                 <h3>{repo.name.charAt(0).toUpperCase() + repo.name.slice(1)}.</h3>
-                                <p>{repo.description}.</p>
+                                <p>{repo.description ? repo.description : <></>}.</p>
                             </div>
                             <div className="divider"></div>
-                            <p>Made with {repo.topics[0].charAt(0).toUpperCase() + repo.topics[0].slice(1).replaceAll('-', ' ')} and {repo.topics[1].charAt(0).toUpperCase() + repo.topics[1].slice(1).replaceAll('-', ' ')}.</p>
+                            {repo.topics[0] && repo.topics[1] ? <p>Made with {repo.topics[0].charAt(0).toUpperCase() + repo.topics[0].slice(1).replaceAll('-', ' ')} and {repo.topics[1].charAt(0).toUpperCase() + repo.topics[1].slice(1).replaceAll('-', ' ')}.</p> : <></>}
+                            
                             <div className="project-card-links">
                                 <a href={repo.html_url} target='_blank' rel='noreferrer'><button className='link-btn'>View Repo</button></a>
-                                <a href={repo.homepage} target='_blank' rel='noreferrer'><button className='link-btn'>Visit Site</button></a>
+                                {repo.homepage ? <a href={repo.homepage} target='_blank' rel='noreferrer'><button className='link-btn'>Visit Site</button></a> : <></>}
                             </div>
                         </div>
                     ))} 
