@@ -32,6 +32,7 @@ function Now() {
             <ul>
               <li style={{color: 'white'}}>- Spotify Remake built in React using the Spotify API.</li>
               <li style={{color: 'white'}}>- PDF certificate generation app + training database with React/Firebase.</li>
+              <li style={{color: 'white'}}>- App to show how climate change has changed Japan's weather.</li>
               <li style={{color: 'white'}}>- MERN Stack.</li>
               <li style={{color: 'white'}}>- Make my code cleaner.</li>
               <li style={{color: 'white'}}>- Contribute to open source and work with other developers.</li>
