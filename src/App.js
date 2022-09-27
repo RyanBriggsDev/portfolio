@@ -11,6 +11,7 @@ import { LayoutProvider } from './components/context/LayoutContext'
 import Footer from './components/layout/Footer/Footer'
 import GithubRedirect from './components/GithubRedirect'
 import TwitterRedirect from './components/TwitterRedirect'
+import Login from './components/pages/Login'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
                     <Route path='/version' element={<Version />} />
                     <Route path='/github-redirect' element={<GithubRedirect />} />
                     <Route path='/twitter-redirect' element={<TwitterRedirect />} />
+                    <Route path='/login' element={<Login />} />
                 </Routes>
                 </div>
             </LayoutProvider>
