@@ -12,7 +12,6 @@ function Login() {
     const navigate = useNavigate();
     
     useEffect(() => {
-        console.log(auth.currentUser);
     }, [auth.currentUser])
 
     if(!auth.currentUser) {        
@@ -23,7 +22,6 @@ function Login() {
             <button onClick={(e) => {
                 e.preventDefault()
                 logInWithEmailAndPassword(email, password)
-                console.log(auth.currentUser);
             }}>Login</button>
         </form>
         )
