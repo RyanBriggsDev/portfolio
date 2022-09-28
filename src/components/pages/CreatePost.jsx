@@ -1,17 +1,22 @@
 import { async } from "@firebase/util";
 import { useState } from "react";
-import { db } from "../../firebase";
+import { db, auth } from "../../firebase";
 import { addDoc, collection } from "firebase/firestore";
+import { useAuthState } from 'react-firebase-hooks/auth'
+import { useNavigate } from "react-router-dom";
 
 function CreatePost() {
+
+    const [ user, loading, error ] = useAuthState(auth);
+    const navigate = useNavigate()
 
     const [formData, setFormData] = useState({
         title: '',
         content: '',
-        date: ''
+        datePosted: ''
     })
 
-    let {title, content, date} = formData
+    let {title, content, datePosted} = formData
 
     const onChange = (e) => {
         setFormData((prevState) => ({
@@ -27,12 +32,13 @@ function CreatePost() {
         setFormData({
             title: '',
             content: '',
-            date: ''
+            datePosted: ''
         })
     }
 
-  return (
-    <div className="create-blog">
+    if(auth.currentUser) {
+        return (
+            <div className="create-blog">
         <h1>Create a blog post</h1>
         <input 
             onChange={onChange} 
@@ -40,24 +46,28 @@ function CreatePost() {
             placeholder='Enter a title...'
             id='title'
             value={title}
-        />
+            />
         <textarea 
             onChange={onChange} 
             type="text" 
             placeholder='Enter blog content...'
             id='content'
             value={content}
-        />
+            />
         <input
             onChange={onChange} 
             type="text" 
             placeholder='17th September 2022'
-            id='date'
-            value={date}
-        />
+            id='datePosted'
+            value={datePosted}
+            />
         <button className="btn" onClick={() => submitPost()}>Publish</button>
     </div>
   )
+}
+
+    return <button className="btn" onClick={() => navigate('/login')}>Login</button>
+
 }
 
 export default CreatePost

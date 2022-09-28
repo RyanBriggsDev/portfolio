@@ -1,11 +1,11 @@
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { auth, db } from "../../firebase";
 import { useEffect, useState } from "react";
-import { query, collection, getDocs, orderBy, limit } from 'firebase/firestore';
+import { query, collection, getDocs } from 'firebase/firestore';
 import Post from '../Post';
 import Header from '../layout/Header'
 
-function BlogPosts({ props }) {
+function BlogPosts() {
 
     const [ user, error ] = useAuthState(auth);
 
@@ -15,7 +15,7 @@ function BlogPosts({ props }) {
     useEffect(() => {
         const getBlogPosts = async () => {
             try {
-              const q = query(collection(db, 'blogPosts'), orderBy('timestamp'), limit(10))
+              const q = query(collection(db, 'blogPosts'))
               const docSnap = await getDocs(q)
               let posts = []
               docSnap.forEach((data) => {

@@ -19,10 +19,6 @@ export const LayoutProvider = ({ children }) => {
         setCallComplete(true)
     }
 
-    useEffect(() => {
-        console.log(repos)
-    }, [repos])
-
     return <LayoutContext.Provider value={{
         fetchRepos,
         repos,
