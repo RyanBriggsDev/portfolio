@@ -13,6 +13,7 @@ import GithubRedirect from './components/GithubRedirect'
 import TwitterRedirect from './components/TwitterRedirect'
 import Login from './components/pages/Login'
 import BlogPosts from './components/pages/BlogPosts'
+import CreatePost from './components/pages/CreatePost'
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
                     <Route path='/twitter-redirect' element={<TwitterRedirect />} />
                     <Route path='/login' element={<Login />} />
                     <Route path='/blog-posts' element={<BlogPosts />} />
+                    <Route path='/create-post' element={<CreatePost />} />
                 </Routes>
                 </div>
             </LayoutProvider>
