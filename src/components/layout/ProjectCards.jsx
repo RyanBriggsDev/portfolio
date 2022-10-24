@@ -4,7 +4,9 @@ import Loading from '../layout/Loading'
 import { Link } from 'react-router-dom'
 import HomeProjectCard from '../HomeProjectCard'
 
-import Wrongmove from '../../assets/projectScreenshots/wrongmove.png'
+import reactPokedex from '../../assets/projectScreenshots/reactPokedex.png'
+import houseMarketplace from '../../assets/projectScreenshots/houseMarketplace.png'
+import expenseTracker from '../../assets/projectScreenshots/expenseTracker.png'
 
 function ProjectCards() {
 
@@ -21,9 +23,23 @@ function ProjectCards() {
                 <h2>My Recent Projects</h2>
                 <div className="home-projects">
                     <HomeProjectCard />
-                    <HomeProjectCard />
-                    <HomeProjectCard />
-                    <HomeProjectCard />
+                    <HomeProjectCard 
+                        projectName='React Pokedex'
+                        projectDescription={'I made a React Pokedex'}
+                        projectImage={reactPokedex}
+                        projectRepo={'https://github.com/RyanBriggsDev/ReactPokedex'}
+                    />
+                    <HomeProjectCard 
+                        projectName='House Marketplace'
+                        projectDescription={`My first React JS project following along with Brad Travercy's React course`}
+                        projectImage={houseMarketplace}
+                        projectRepo={'https://github.com/RyanBriggsDev/house-marketplace'}/>
+                    <HomeProjectCard 
+                        projectName='Expense Tracker'
+                        projectDescription={'A simple expense tracker made using Vanilla JavaScript'}
+                        projectImage={expenseTracker}
+                        projectRepo={'https://github.com/RyanBriggsDev/expense-tracker'}
+                    />
                 </div>
             </div>
         )
