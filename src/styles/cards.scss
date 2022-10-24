@@ -21,6 +21,10 @@
     padding: 1rem;
 }
 
+.home-project-card-content > * {
+    margin: 0.5rem 0;
+}
+
 .home-project-card-image {
     // background-image: url('../assets/projectScreenshots/wrongmove.png');
     background-position: center;
@@ -45,4 +49,10 @@
 
 .card-button:hover {
     background-color: black;
+}
+
+@media (max-width: 700px) {
+    .home-projects {
+        grid-template-columns: 1fr;
+    }
 }

@@ -20,7 +20,7 @@ function ProjectCards() {
     if(callComplete === true) {
         return (
             <div className="projects-container">
-                <h2>My Recent Projects</h2>
+                <h2>Recent Projects</h2>
                 <div className="home-projects">
                     <HomeProjectCard />
                     <HomeProjectCard 
