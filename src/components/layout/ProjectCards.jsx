@@ -17,7 +17,7 @@ function ProjectCards() {
                 <h2>Check out my projects.</h2>
                 <div className="projects-grid">
                     {repos.map((repo) => (
-                        <div className="project-card" key={repo.id}>
+                        <div className="project-cards" key={repo.id}>
                             {repo.name}
                         </div>
                     ))} 
