@@ -25,7 +25,7 @@ function ProjectCards() {
                     <HomeProjectCard 
                         projectLink={'https://wrongmove-47s52aisf-ytsruh.vercel.app/'}
                     />
-                    <HomeProjectCard 
+                    <HomeProjectCard
                         projectName='React Pokedex'
                         projectDescription={'I made a React Pokedex'}
                         projectImage={reactPokedex}
@@ -34,7 +34,7 @@ function ProjectCards() {
                     />
                     <HomeProjectCard 
                         projectName='House Marketplace'
-                        projectDescription={`My first React JS project following along with Brad Travercy's React course`}
+                        projectDescription={`My first React JS project following along with Brad Traversy's React course`}
                         projectImage={houseMarketplace}
                         projectRepo={'https://github.com/RyanBriggsDev/house-marketplace'}
                         projectLink='https://house-marketplace-fkfcmqnhi-ryanbriggsdev.vercel.app/'
