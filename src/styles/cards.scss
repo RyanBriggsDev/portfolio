@@ -1,0 +1,68 @@
+// project cards
+
+.home-projects {
+    width: 100%;
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.home-project-card {
+    gap: 0.5rem;
+    padding-top: 0.5rem;
+    background-color: rgb(26, 26, 26);
+    border-radius: 5px;
+    display: grid;
+}
+
+.home-project-card-content {
+    padding: 1rem;
+}
+
+.home-project-card-content > * {
+    margin: 0.5rem 0;
+}
+
+.home-project-card-image {
+    // background-image: url('../assets/projectScreenshots/wrongmove.png');
+    background-position: center;
+    border-radius: 0 0 5px 5px;
+    background-size: cover;
+    min-height: 300px;
+    display: grid;
+    place-items: end start;
+    padding: 1rem;
+    color: black;
+}
+
+.home-project-card-links {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-button {
+    width: auto;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.914);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 300ms
+}
+
+.home-project-card-links > .live-btn {
+    background-color: rgb(0, 89, 149);
+}
+
+.card-button:hover {
+    background-color: black;
+}
+
+@media (max-width: 700px) {
+    .home-projects {
+        grid-template-columns: 1fr;
+    }
+}
