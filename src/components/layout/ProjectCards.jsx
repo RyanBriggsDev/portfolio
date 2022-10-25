@@ -28,14 +28,14 @@ function ProjectCards() {
                     />
                     <HomeProjectCard
                         projectName='React Pokedex'
-                        projectDescription={'I made a React Pokedex'}
+                        projectDescription={[`A Pokédex made in React using the `,<a href="https://pokeapi.co/" target='_blank' rel="noopener noreferrer">PokéAPI.</a>, ' ', 'You can search every pokémon by number or name and the app will show Pokédata']}
                         projectImage={reactPokedex}
                         projectRepo={'https://github.com/RyanBriggsDev/ReactPokedex'}
                         projectLink={'https://react-pokedex-blue.vercel.app/'}
                     />
                     <HomeProjectCard 
                         projectName='House Marketplace'
-                        projectDescription={`My first React JS project following along with Brad Traversy's React course`}
+                        projectDescription={`My first React JS project following along with Brad Traversy's React course. The app was build using the Firestore database as a backend and allows users to sign up as agents and add listings, as well as browse properties as a user`}
                         projectImage={houseMarketplace}
                         projectRepo={'https://github.com/RyanBriggsDev/house-marketplace'}
                         projectLink='https://house-marketplace-fkfcmqnhi-ryanbriggsdev.vercel.app/'
