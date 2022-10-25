@@ -272,6 +272,18 @@ header .header-p {
     animation: bounce 1.2s ease-in-out;
 }
 
+// section title 
+
+.section-title {
+    font-size: 3rem;
+    font-family: poppins-bold;
+    background: #121FCF;
+    background: linear-gradient(to right, rgb(17, 85, 136) 0%, rgba(0,161,194,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 // about me
 
 .about-me > * {
@@ -501,5 +513,8 @@ header .header-p {
     }
     .blog-post {
         width: 100%;
+    }
+    .section-title {
+        font-size: 2.5rem;
     }
 }

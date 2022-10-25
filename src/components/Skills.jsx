@@ -11,7 +11,6 @@ function Skills() {
   return (
     <div className="skills">
         <SectionTitle text='Skills'/>
-        <p>What I'm currently working with</p>
             <ul className="skills-grid">
                 <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target='_blank' rel="noopener noreferrer" className='skill'>
                     <li>

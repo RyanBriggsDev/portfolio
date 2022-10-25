@@ -2,13 +2,14 @@ import envelope from '../../assets/envelope.png'
 import github from '../../assets/github.png'
 // import linkedin from '../../assets/linkedin.png'
 import twitter from '../../assets/twitter.png'
+import SectionTitle from '../SectionTitle'
 
 
 function ContactCard() {
   
   return (
     <div className='contact-card'>
-        <h2>Let's Connect</h2>
+        <SectionTitle text={`Let's Connect`} />
         <ul>
           <a href="https://twitter.com/ryanbriggsdev" target="_blank" rel="noreferrer">
               <img className="contact-icon" src={twitter} alt="twitter logo" />

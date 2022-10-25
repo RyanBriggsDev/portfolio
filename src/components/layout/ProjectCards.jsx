@@ -7,6 +7,7 @@ import HomeProjectCard from '../HomeProjectCard'
 import reactPokedex from '../../assets/projectScreenshots/reactPokedex.png'
 import houseMarketplace from '../../assets/projectScreenshots/houseMarketplace.png'
 import expenseTracker from '../../assets/projectScreenshots/expenseTracker.png'
+import SectionTitle from '../SectionTitle'
 
 function ProjectCards() {
 
@@ -20,7 +21,7 @@ function ProjectCards() {
     if(callComplete === true) {
         return (
             <div className="projects-container">
-                <h2>Recent Projects</h2>
+                <SectionTitle text='Recent Projects'/>
                 <div className="home-projects">
                     <HomeProjectCard 
                         projectLink={'https://wrongmove-47s52aisf-ytsruh.vercel.app/'}

@@ -2,7 +2,7 @@
 
 function SectionTitle(props) {
   return (
-    <h3>{props.text}</h3>
+    <h3 className="section-title">{props.text}</h3>
   )
 }
 
