@@ -12,13 +12,14 @@
 .home-project-card {
     gap: 0.5rem;
     padding-top: 0.5rem;
-    background-color: rgb(26, 26, 26);
+    background-color: #303030;
     border-radius: 5px;
     display: grid;
 }
 
 .home-project-card-content {
     padding: 1rem;
+    padding-bottom: 0;
 }
 
 .home-project-card-content > * {
@@ -26,10 +27,10 @@
 }
 
 .home-project-card-image {
-    // background-image: url('../assets/projectScreenshots/wrongmove.png');
     background-position: center;
     border-radius: 0 0 5px 5px;
     background-size: cover;
+    border: 0.5rem solid #303030;
     min-height: 300px;
     display: grid;
     place-items: end start;
@@ -58,7 +59,7 @@
 }
 
 .card-button:hover {
-    background-color: black;
+    background-color: #303030;
 }
 
 @media (max-width: 700px) {
