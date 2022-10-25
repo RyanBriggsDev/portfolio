@@ -22,23 +22,29 @@ function ProjectCards() {
             <div className="projects-container">
                 <h2>Recent Projects</h2>
                 <div className="home-projects">
-                    <HomeProjectCard />
+                    <HomeProjectCard 
+                        projectLink={'https://wrongmove-47s52aisf-ytsruh.vercel.app/'}
+                    />
                     <HomeProjectCard 
                         projectName='React Pokedex'
                         projectDescription={'I made a React Pokedex'}
                         projectImage={reactPokedex}
                         projectRepo={'https://github.com/RyanBriggsDev/ReactPokedex'}
+                        projectLink={'https://react-pokedex-blue.vercel.app/'}
                     />
                     <HomeProjectCard 
                         projectName='House Marketplace'
                         projectDescription={`My first React JS project following along with Brad Travercy's React course`}
                         projectImage={houseMarketplace}
-                        projectRepo={'https://github.com/RyanBriggsDev/house-marketplace'}/>
+                        projectRepo={'https://github.com/RyanBriggsDev/house-marketplace'}
+                        projectLink='https://house-marketplace-fkfcmqnhi-ryanbriggsdev.vercel.app/'
+                    />
                     <HomeProjectCard 
                         projectName='Expense Tracker'
                         projectDescription={'A simple expense tracker made using Vanilla JavaScript'}
                         projectImage={expenseTracker}
                         projectRepo={'https://github.com/RyanBriggsDev/expense-tracker'}
+                        projectLink={'https://expense-tracker-kappa-ten.vercel.app/'}
                     />
                 </div>
             </div>
