@@ -1,0 +1,54 @@
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+
+.skill {
+    background-color: #303030;
+    color: white;
+    border-radius: 5px;
+    padding: 2rem;
+    text-align: center;
+    transition: 300ms;
+}
+
+.skill:hover {
+    background-color: white;
+    color: black;
+}
+
+.skill > li > img {
+    width: 96px;
+    height: 96px;
+}
+
+.skill > li > p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 1250px) {
+    .skills-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .skill {
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .skill > li > img {
+        width: 64px;
+        height: 64px;
+    }
+
+}
