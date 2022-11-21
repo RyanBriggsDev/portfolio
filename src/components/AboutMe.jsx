@@ -1,5 +1,5 @@
-import React from 'react'
 import { useState, useEffect } from 'react'
+import SectionTitle from '../components/SectionTitle'
 
 let data = require('../data/aboutMe.json')
 
@@ -13,7 +13,7 @@ function AboutMe() {
 
   return (
     <div className='about-me'>
-      <h2>Learn a bit, or a lot, about me.</h2>
+      <SectionTitle text='Learn a bit, or a lot, about me' />
       <div className="desc-option-div">
         <div className='btn-circle' onClick={() => setAboutMeText(data.descriptions.short)}></div>
         <div className='btn-circle' onClick={() => setAboutMeText(data.descriptions.fairlyShort)}></div>
