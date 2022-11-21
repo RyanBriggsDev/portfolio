@@ -6,7 +6,7 @@ import HomeProjectCard from '../HomeProjectCard'
 
 import reactPokedex from '../../assets/projectScreenshots/reactPokedex.png'
 import houseMarketplace from '../../assets/projectScreenshots/houseMarketplace.png'
-import expenseTracker from '../../assets/projectScreenshots/expenseTracker.png'
+import nextComponents from '../../assets/projectScreenshots/nextComponents.png'
 import SectionTitle from '../SectionTitle'
 
 function ProjectCards() {
@@ -26,6 +26,13 @@ function ProjectCards() {
                     <HomeProjectCard 
                         projectLink={'https://wrongmove-47s52aisf-ytsruh.vercel.app/'}
                     />
+                    <HomeProjectCard 
+                        projectName='React/Next.js Component Library'
+                        projectDescription={'An app to document React/Next components to make reuse easier, help other developers and improve my documentation skills.'}
+                        projectImage={nextComponents}
+                        projectRepo={'https://github.com/RyanBriggsDev/next-components'}
+                        projectLink={'https://next-components-zeta.vercel.app/'}
+                    />
                     <HomeProjectCard
                         projectName='React Pokedex'
                         projectDescription={[`A Pokédex made in React using the `,<a href="https://pokeapi.co/" target='_blank' rel="noopener noreferrer">PokéAPI.</a>, ' ', 'You can search every pokémon by number or name and the app will show Pokédata']}
@@ -39,13 +46,6 @@ function ProjectCards() {
                         projectImage={houseMarketplace}
                         projectRepo={'https://github.com/RyanBriggsDev/house-marketplace'}
                         projectLink='https://house-marketplace-fkfcmqnhi-ryanbriggsdev.vercel.app/'
-                    />
-                    <HomeProjectCard 
-                        projectName='Expense Tracker'
-                        projectDescription={'A simple expense tracker made using Vanilla JavaScript'}
-                        projectImage={expenseTracker}
-                        projectRepo={'https://github.com/RyanBriggsDev/expense-tracker'}
-                        projectLink={'https://expense-tracker-kappa-ten.vercel.app/'}
                     />
                 </div>
             </div>
