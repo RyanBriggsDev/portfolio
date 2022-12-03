@@ -1,0 +1,45 @@
+.btn {
+    padding: 12px 25px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+    background-color: white;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: rgb(212, 212, 212);
+}
+
+.btn-primary {
+    background: rgb(13,55,87);
+    background: linear-gradient(90deg, rgba(13,55,87,1) 0%, rgba(0,161,194,1) 100%);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: rgb(13, 58, 92);
+}
+
+// about me section
+
+.btn-circle {
+    border-radius: 50%;
+    background-color: white;
+    display: inline-block;
+    margin-right: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+}
+
+.btn-circle:hover {
+    cursor: pointer;
+    background-color: rgb(0, 89, 149);
+}
+
+.btn-circle-selected {
+    background-color: rgb(0, 89, 149);
+}

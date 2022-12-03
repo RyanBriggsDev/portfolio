@@ -71,6 +71,21 @@ a, a:hover, a:focus, a:active {
     padding: 120px 30px;
 }
 
+// display classes
+
+    // flex classes
+
+    .flex {display: flex;}
+    .f-center {justify-content: center; align-items: center;}
+    .f-start {justify-content: flex-start; align-items: left;}
+    .f-col {flex-direction: column;}
+    .f-row {flex-direction: row;}
+
+
+// padding classes
+
+.p-1 {padding: 1rem;}
+
 // home
 
 .content-grid {
@@ -176,48 +191,6 @@ a, a:hover, a:focus, a:active {
 }
 
 // reusable
-
-.btn {
-    padding: 12px 25px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    border: none;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
-    background-color: white;
-}
-
-.btn:hover {
-    cursor: pointer;
-    background-color: rgb(212, 212, 212);
-}
-
-.btn-primary {
-    background: rgb(13,55,87);
-    background: linear-gradient(90deg, rgba(13,55,87,1) 0%, rgba(0,161,194,1) 100%);
-    color: white;
-}
-
-.btn-primary:hover {
-    background-color: rgb(13, 58, 92);
-}
-
-.btn-circle {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: white;
-    display: inline-block;
-    margin-right: 0.5rem;
-}
-
-.btn-circle:hover {
-    cursor: pointer;
-    background-color: rgb(0, 89, 149);
-}
-
-.btn-circle-selected {
-    background-color: rgb(0, 89, 149);
-}
 
 .divider {
     width: 100%;
