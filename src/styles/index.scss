@@ -6,12 +6,12 @@
 
 @font-face {
     font-family: 'poppins-bold';
-    src: url(./assets/Poppins/Poppins-Bold.ttf);
+    src: url(../assets/Poppins/Poppins-Bold.ttf);
 }
 
 @font-face {
     font-family: 'poppins-light';
-    src: url(./assets/Poppins/Poppins-Light.ttf);
+    src: url(../assets/Poppins/Poppins-Light.ttf);
 }
 
 // prop classes
@@ -212,6 +212,10 @@ a, a:hover, a:focus, a:active {
 
 .btn-circle:hover {
     cursor: pointer;
+    background-color: rgb(0, 89, 149);
+}
+
+.btn-circle-selected {
     background-color: rgb(0, 89, 149);
 }
 
