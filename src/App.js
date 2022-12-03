@@ -13,8 +13,8 @@ import Login from './components/pages/Login'
 import BlogPosts from './components/pages/BlogPosts'
 import CreatePost from './components/pages/CreatePost'
 
-import GithubRedirect from './components/GithubRedirect'
-import TwitterRedirect from './components/TwitterRedirect'
+import GithubRedirect from './components/redirects/GithubRedirect'
+import TwitterRedirect from './components/redirects/TwitterRedirect'
 import YtsruhRedirect from './components/redirects/YtsruhRedirect'
 
 function App() {

@@ -19,7 +19,7 @@ function AboutMe() {
         <div className={`btn-circle p-1 ${aboutMeText === data.descriptions.long ? 'btn-circle-selected' : ''}`} onClick={() => setAboutMeText(data.descriptions.long)}></div>
         <div className={`btn-circle p-1 ${aboutMeText === data.descriptions.longAf ? 'btn-circle-selected' : ''}`} onClick={() => setAboutMeText(data.descriptions.longAf)}></div>
       </div>
-      <p>{aboutMeText}</p>
+      <p className='font-1_2 w-75'>{aboutMeText}</p>
     </div>
   )
 }

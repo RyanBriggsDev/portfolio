@@ -71,20 +71,30 @@ a, a:hover, a:focus, a:active {
     padding: 120px 30px;
 }
 
-// display classes
+// layout and spacing
 
-    // flex classes
+    // display classes
 
-    .flex {display: flex;}
-    .f-center {justify-content: center; align-items: center;}
-    .f-start {justify-content: flex-start; align-items: left;}
-    .f-col {flex-direction: column;}
-    .f-row {flex-direction: row;}
+        // flex classes
 
+        .flex {display: flex;}
+        .f-center {justify-content: center; align-items: center;}
+        .f-start {justify-content: flex-start; align-items: left;}
+        .f-col {flex-direction: column;}
+        .f-row {flex-direction: row;}
 
-// padding classes
+    // spacing
 
-.p-1 {padding: 1rem;}
+        // padding classes
+
+        .p-1 {padding: 1rem;}
+
+        // margin classes
+
+        // width
+        
+        .w-50 {width: 50%;}
+        .w-75 {width: 75%;}
 
 // home
 

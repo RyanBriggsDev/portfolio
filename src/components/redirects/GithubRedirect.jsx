@@ -1,5 +1,5 @@
 import {useEffect} from 'react'
-import Loading from './layout/Loading'
+import Loading from '../layout/Loading'
 
 function GithubRedirect() {
 
