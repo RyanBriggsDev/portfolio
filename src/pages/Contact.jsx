@@ -1,6 +1,5 @@
-import React from 'react'
-import ContactCard from '../layout/ContactCard'
-import Header from '../layout/Header'
+import ContactCard from '../components/layout/ContactCard'
+import Header from '../components/layout/Header'
 
 function Contact() {
 

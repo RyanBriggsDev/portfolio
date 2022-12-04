@@ -1,5 +1,5 @@
-import Header from '../layout/Header'
-import SectionTitle from '../SectionTitle'
+import Header from '../components/layout/Header'
+import SectionTitle from '../components/SectionTitle'
 
 function Version() {
 

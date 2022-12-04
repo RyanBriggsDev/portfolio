@@ -1,5 +1,5 @@
-import Header from '../layout/Header'
-import AllProjectCards from '../projects/AllProjectCards'
+import Header from '../components/layout/Header'
+import AllProjectCards from '../components/projects/AllProjectCards'
 
 function Projects(props) {
     return (
