@@ -15,9 +15,14 @@ function Version() {
         />
         <ul className='version-history'>
             <li>
-                <SectionTitle text='Version: 1.0.2' />
+                <SectionTitle text='Version: 1.0.3' />
                 <p><strong>Update Notes: </strong>Added 'skills' component and section on homepage.</p>
             </li>
+            <li>
+                <SectionTitle text='Version: 1.0.3' />
+                <p><strong>Update Notes: </strong>Carried out a refactor of code file structure to make app easier to work on.</p>
+            </li>
+
             <li>
                 <SectionTitle text='Version: 1.0.1' />
                 <p><strong>Update Notes: </strong>Re-evaluated home cards section as I wasn't happy with how they looked. Removed GitHub API for this section as it didn't give me the flexibility I wanted.</p>
