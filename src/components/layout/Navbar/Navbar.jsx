@@ -1,4 +1,4 @@
-import LayoutContext from "../../context/LayoutContext"
+import LayoutContext from "../../../context/LayoutContext"
 import { useContext, useState } from "react"
 import './nav.scss'
 import { Link } from "react-router-dom"
