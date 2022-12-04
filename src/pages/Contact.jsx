@@ -1,4 +1,4 @@
-import ContactCard from '../components/layout/ContactCard'
+import ContactCard from '../components/cards/ContactCard'
 import Header from '../components/layout/Header'
 
 function Contact() {

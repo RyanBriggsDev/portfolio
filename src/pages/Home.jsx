@@ -1,11 +1,11 @@
-import ProjectCards from '../components/projects/ProjectCards'
-import ContactCard from '../components/layout/ContactCard'
+import ProjectCards from '../components/cards/projects/ProjectCards'
+import ContactCard from '../components/cards/ContactCard'
 import AboutMe from '../components/AboutMe/AboutMe'
 import Skills from '../components/Skills'
 import { Link } from 'react-router-dom'
 import CircleLogo from '../assets/CircleLogo.png'
 
-function Home(props) {
+function Home() {
   return (
     <div className='content-grid'>
       <header className='home-header'>

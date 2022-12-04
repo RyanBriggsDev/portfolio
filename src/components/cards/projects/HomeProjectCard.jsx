@@ -1,4 +1,4 @@
-import Wrongmove from '../../assets/projectScreenshots/wrongmove.png'
+import Wrongmove from '../../../assets/projectScreenshots/wrongmove.png'
 
 import { Link } from 'react-router-dom'
 

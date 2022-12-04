@@ -1,7 +1,7 @@
 import Header from '../components/layout/Header'
-import AllProjectCards from '../components/projects/AllProjectCards'
+import AllProjectCards from '../components/cards/projects/AllProjectCards'
 
-function Projects(props) {
+function Projects() {
     return (
     <div className="content-grid">
       <Header 

@@ -1,13 +1,13 @@
-import LayoutContext from '../../context/LayoutContext'
+import LayoutContext from '../../../context/LayoutContext'
 import { useContext, useEffect } from 'react'
-import Loading from '../layout/Loading'
+import Loading from '../../layout/Loading'
 import { Link } from 'react-router-dom'
-import HomeProjectCard from '../projects/HomeProjectCard'
+import HomeProjectCard from './HomeProjectCard'
 
-import reactPokedex from '../../assets/projectScreenshots/reactPokedex.png'
-import houseMarketplace from '../../assets/projectScreenshots/houseMarketplace.png'
-import nextComponents from '../../assets/projectScreenshots/nextComponents.png'
-import SectionTitle from '../SectionTitle'
+import reactPokedex from '../../../assets/projectScreenshots/reactPokedex.png'
+import houseMarketplace from '../../../assets/projectScreenshots/houseMarketplace.png'
+import nextComponents from '../../../assets/projectScreenshots/nextComponents.png'
+import SectionTitle from '../../SectionTitle'
 
 function ProjectCards() {
 
