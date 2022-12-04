@@ -1,21 +1,24 @@
-import React from 'react'
 import { BrowserRouter as Router, Route, Routes} from 'react-router-dom'
-import Home from './components/pages/Home'
-import Contact from './components/pages/Contact'
-import NotFound from './components/pages/NotFound'
-import Now from './components/pages/Now'
-import Projects from './components/pages/Projects'
-import Version from './components/pages/Version'
-import Navbar from './components/layout/Navbar/Navbar'
-import { LayoutProvider } from './components/context/LayoutContext'
-import Footer from './components/layout/Footer/Footer'
-import Login from './components/pages/Login'
-import BlogPosts from './components/pages/BlogPosts'
-import CreatePost from './components/pages/CreatePost'
 
-import GithubRedirect from './components/redirects/GithubRedirect'
-import TwitterRedirect from './components/redirects/TwitterRedirect'
-import YtsruhRedirect from './components/redirects/YtsruhRedirect'
+import Navbar from './components/layout/Navbar/Navbar'
+import { LayoutProvider } from './context/LayoutContext'
+
+// Pages
+import Home from './pages/Home'
+import Contact from './pages/Contact'
+import NotFound from './pages/NotFound'
+import Now from './pages/Now'
+import Projects from './pages/Projects'
+import Version from './pages/Version'
+import BlogPosts from './pages/BlogPosts'
+import CreatePost from './pages/CreatePost'
+import Footer from './components/layout/Footer/Footer'
+import Login from './pages/Login'
+
+    // Redirects
+    import GithubRedirect from './components/redirects/GithubRedirect'
+    import TwitterRedirect from './components/redirects/TwitterRedirect'
+    import YtsruhRedirect from './components/redirects/YtsruhRedirect'
 
 function App() {
   return (

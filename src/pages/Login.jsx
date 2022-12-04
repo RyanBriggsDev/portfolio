@@ -1,8 +1,8 @@
-import { logInWithEmailAndPassword, auth, logout } from '../../firebase'
+import { logInWithEmailAndPassword, auth, logout } from '../firebase'
 import { useState, useEffect } from "react"
 import { useAuthState } from 'react-firebase-hooks/auth'
 import { useNavigate } from 'react-router-dom'
-import Header from '../layout/Header'
+import Header from '../components/layout/Header'
 
 function Login() {
 

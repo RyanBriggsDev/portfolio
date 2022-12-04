@@ -1,9 +1,9 @@
 import { useAuthState } from 'react-firebase-hooks/auth'
-import { auth, db } from "../../firebase";
+import { auth, db } from "../firebase";
 import { useEffect, useState } from "react";
 import { query, collection, getDocs } from 'firebase/firestore';
-import Post from '../Post';
-import Header from '../layout/Header'
+import Post from '../components/Post'
+import Header from '../components/layout/Header';
 
 function BlogPosts() {
 

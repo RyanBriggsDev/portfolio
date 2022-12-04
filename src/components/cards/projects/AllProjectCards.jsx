@@ -1,6 +1,6 @@
-import LayoutContext from '../context/LayoutContext'
+import LayoutContext from '../../../context/LayoutContext';
 import { useContext, useEffect } from 'react'
-import Loading from './Loading'
+import Loading from '../../layout/Loading';
 
 function ProjectCards() {
 
