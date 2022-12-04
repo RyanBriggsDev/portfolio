@@ -1,4 +1,4 @@
-import ProjectCards from '../layout/ProjectCards'
+import ProjectCards from '../projects/ProjectCards'
 import ContactCard from '../layout/ContactCard'
 import AboutMe from '../AboutMe/AboutMe'
 import Skills from '../Skills'

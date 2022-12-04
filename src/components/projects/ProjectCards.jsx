@@ -2,7 +2,7 @@ import LayoutContext from '../../context/LayoutContext'
 import { useContext, useEffect } from 'react'
 import Loading from '../layout/Loading'
 import { Link } from 'react-router-dom'
-import HomeProjectCard from '../HomeProjectCard'
+import HomeProjectCard from '../projects/HomeProjectCard'
 
 import reactPokedex from '../../assets/projectScreenshots/reactPokedex.png'
 import houseMarketplace from '../../assets/projectScreenshots/houseMarketplace.png'

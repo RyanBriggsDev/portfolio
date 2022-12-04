@@ -1,5 +1,5 @@
 import Header from '../layout/Header'
-import AllProjectCards from '../layout/AllProjectCards'
+import AllProjectCards from '../projects/AllProjectCards'
 
 function Projects(props) {
     return (
