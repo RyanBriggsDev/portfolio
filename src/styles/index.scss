@@ -82,6 +82,8 @@ a, a:hover, a:focus, a:active {
         .f-start {justify-content: flex-start; align-items: left;}
         .f-col {flex-direction: column;}
         .f-row {flex-direction: row;}
+        .gap-1 {gap: 1rem;}
+        .dir-col {flex-direction: column;;}
 
     // spacing
 
@@ -90,6 +92,10 @@ a, a:hover, a:focus, a:active {
         .p-1 {padding: 1rem;}
 
         // margin classes
+
+        .my-1 {
+            margin: 1rem 0;
+        }
 
         // width
         
