@@ -23,13 +23,6 @@ function AboutMe() {
       </ul> */}
     </>
   )
-
-
-  
-
-
-
-  
   const five = (
     <>
       <p>I'm a self taught Front End Web Developer currently doing freelance work whilst looking for the right full time role.</p>
