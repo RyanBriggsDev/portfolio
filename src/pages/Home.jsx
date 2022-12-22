@@ -3,7 +3,7 @@ import ContactCard from '../components/cards/ContactCard'
 import AboutMe from '../components/AboutMe/AboutMe'
 import Skills from '../components/Skills'
 import { Link } from 'react-router-dom'
-import CircleLogo from '../assets/CircleLogo.png'
+import profilePic from '../assets/profilePic.png'
 
 function Home() {
   return (
@@ -16,7 +16,7 @@ function Home() {
           <Link className='hover-animation' to={'/projects'}><button className="btn btn-primary">View My Projects</button></Link>
         </div>
         <div className="home-header-img-div">
-          <img className='home-header-img' src={CircleLogo} alt="ryan briggs" />
+          <img className='home-header-img' src={profilePic} alt="ryan briggs" />
         </div>
       </header>
       <AboutMe />
